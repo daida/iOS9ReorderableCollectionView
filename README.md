@@ -4,7 +4,7 @@ Reorderable collection view implementation with the new iOS 9 methods
 
 based on http://nshint.io/blog/2015/07/16/uicollectionviews-now-have-easy-reordering/
 
-Step1 -> UICollectionViewController override method
+Step1 -> UICollectionViewController override
 
 Step2 -> UIViewController and a UIGestureRecognizer
 
