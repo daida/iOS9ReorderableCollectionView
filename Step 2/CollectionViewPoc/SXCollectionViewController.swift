@@ -52,7 +52,7 @@ class SXCollectionViewController: UICollectionViewController, UICollectionViewDe
         self.collectionView?.registerNib(cellNib, forCellWithReuseIdentifier: reuseIdentifier)
     }
     
-    /** Init from Storyboard or xib */
+    /** Init programmatically */
     init() {
         super.init(collectionViewLayout: SXCollectionViewController.flowLayout)
     }
