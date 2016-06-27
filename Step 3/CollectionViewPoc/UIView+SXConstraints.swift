@@ -1,11 +1,3 @@
-//
-//  UIView+SXConstraints.swift
-//  TraitTests
-//
-//  Created by Francescu on 11/06/2015.
-//  Copyright (c) 2015 Stupeflix. All rights reserved.
-//
-
 import UIKit
 
 extension UIView {
