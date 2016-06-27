@@ -1,6 +1,6 @@
 # iOS9ReorderableCollectionView
 
-Reorderable collection view implementation with the new iOS 9 methods
+Reorderable collection view implementation with new iOS 9 methods
 
 Based on http://nshint.io/blog/2015/07/16/uicollectionviews-now-have-easy-reordering/
 
