@@ -6,7 +6,7 @@ based on http://nshint.io/blog/2015/07/16/uicollectionviews-now-have-easy-reorde
 
 Step1 -> UICollectionViewController override
 
-Step2 -> UIViewController and a UIGestureRecognizer
+Step2 -> UIViewController override and a UIGestureRecognizer
 
 Step3 -> Same as Step2 and using a custom UICollectionViewFlowLayout in order to preserve the cell size during the reordering (last part of the NSHint post)
 
