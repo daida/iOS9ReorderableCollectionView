@@ -8,6 +8,6 @@ Step1 -> `UICollectionViewController` override
 
 Step2 -> `UIViewController` override and a `UIGestureRecognizer` on the `UICollectionView`
 
-Step3 -> Same as Step 2 and using a custom `UICollectionViewFlowLayout` in order to preserve the cell size during the reordering (last part of the NSHint post)
+Step3 -> Same as Step 2 with a custom `UICollectionViewFlowLayout` in order to preserve the cell size during the reordering (last part of the NSHint post)
 
 Step4 -> Add some animations and customisations during the reorder by using a custom `UICollectionViewFlowLayout` and a `UIGestureRecognizer`
