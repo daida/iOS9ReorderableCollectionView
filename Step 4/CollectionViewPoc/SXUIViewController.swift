@@ -17,7 +17,7 @@ class SXFlowLayout: UICollectionViewFlowLayout {
     
     override func layoutAttributesForInteractivelyMovingItemAtIndexPath(indexPath: NSIndexPath, withTargetPosition position: CGPoint) -> UICollectionViewLayoutAttributes {
         
-        guard let dest = super.layoutAttributesForItemAtIndexPath(indexPath) else { return UICollectionViewLayoutAttributes() }
+        guard let dest = super.layoutAttributesForItemAtIndexPath(indexPath)?.copy() as? UICollectionViewLayoutAttributes else { return UICollectionViewLayoutAttributes() }
         
         dest.transform = CGAffineTransformMakeScale(1.4, 1.4)
         
