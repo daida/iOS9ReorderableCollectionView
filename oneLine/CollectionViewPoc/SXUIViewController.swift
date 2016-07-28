@@ -15,6 +15,26 @@ import UIKit
     the model array will be updated and the cell size will be updated, in that way the size will not change during the reorder process */
 class SXFlowLayout: UICollectionViewLayout {
 
+    
+    override func layoutAttributesForInteractivelyMovingItemAtIndexPath(indexPath: NSIndexPath, withTargetPosition position: CGPoint) -> UICollectionViewLayoutAttributes {
+        
+        let dest = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
+        
+        dest.frame = self.cellRectForIndexPath(indexPath)
+        
+        dest.transform = CGAffineTransformMakeScale(1.4, 1.4)
+        
+        dest.alpha = 0.8
+        
+        dest.center = position
+        
+        dest.zIndex =  NSIntegerMax
+        
+        return dest
+        
+    }
+
+    
     var attributesCache = [UICollectionViewLayoutAttributes]()
     
     var attributesCacheToModify = [UICollectionViewLayoutAttributes]()
@@ -23,9 +43,7 @@ class SXFlowLayout: UICollectionViewLayout {
     override func prepareLayout() {
         guard let collectionView = self.collectionView else { return }
         
-       // if attributesCache.count != 0 { return }
-        
-        self.attributesCache.removeAll()
+        if attributesCache.count != 0 { return }
         
         for i in 0..<collectionView.numberOfItemsInSection(0) {
             
